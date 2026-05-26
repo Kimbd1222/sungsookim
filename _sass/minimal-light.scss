@@ -7,7 +7,8 @@
   height:2.4rem;
   width:2.4rem;
   background-color:transparent;
-  color:#043361!important;
+  #color:#043361!important;
+  color:#1E3A8A!important;
   border-radius:100%;
   text-align:center;
   font-size:1.15rem;
@@ -230,18 +231,21 @@ papertitle {
 
 h3, h4, h5, h6 {
   font-weight: 600;
-  color:#043361;
+  #color:#043361;
+  color:#1E3A8A;
   margin:0 0 20px;
 }
 
 h1 {
   font-weight: 500;
-  color:#043361;
+  #color:#043361;
+color:#1E3A8A;
   margin:0 0 20px;
 }
 
 h2 {
-  color:#043361;
+  #color:#043361;
+color:#1E3A8A;
   font-weight: 500;
   margin:2px 0px 15px;
   font-size: 157%;
@@ -270,12 +274,14 @@ h1 {
 }
 
 a {
-  color:#39c;
+  #color:#39c;
+color:#1E3A8A;
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  #color:#069;
+color:#3B82F6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -594,28 +600,67 @@ footer {
   margin-left: 0px;
   display:none;
   font-family: monospace;
+
+/* ===== Sungsoo Kim: Monotone + Navy override ===== */
+
+:root {
+  --sungsoo-navy: #1E3A8A;
+  --sungsoo-navy-hover: #3B82F6;
+  --sungsoo-dark-bg: #111827;
+  --sungsoo-dark-text: #E5E7EB;
 }
 
-a {
-  color: #0B1F3A;
+/* Light mode */
+a,
+.social-icons a {
+  color: var(--sungsoo-navy) !important;
 }
 
-a:hover {
-  color: #1F3A5F;
+a:hover,
+.social-icons a:hover {
+  color: var(--sungsoo-navy-hover) !important;
 }
 
-h1, h2, h3 {
-  color: #0B1F3A;
+h1, h2, h3, h4, h5, h6 {
+  color: var(--sungsoo-navy) !important;
 }
 
-strong {
-  color: #0B1F3A;
+/* Make profile image a bit larger */
+.image.avatar img {
+  width: 70%;
 }
 
-body {
-  color: #222222;
-}
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--sungsoo-dark-bg) !important;
+    color: var(--sungsoo-dark-text) !important;
+  }
 
-.wrapper {
-  max-width: 960px;
+  a,
+  .social-icons a {
+    color: #93C5FD !important;
+  }
+
+  a:hover,
+  .social-icons a:hover {
+    color: #DBEAFE !important;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  papertitle,
+  strong,
+  th,
+  dt {
+    color: #BFDBFE !important;
+  }
+
+  autocolor {
+    color: var(--sungsoo-dark-text) !important;
+  }
+
+  .social-icons a:hover {
+    background-color: #1F2937 !important;
+  }
+}
 }
