@@ -90,18 +90,20 @@ section, main {
 }
 
 .hero {
-  padding-top: 70px;
+  padding-top: 50px;
   text-align: left;
 }
 
 .profile-img {
-  width: 220px;
-  height: 270px;
+  width: 170px;
+  aspect-ratio: 3/4;
   object-fit: cover;
-  border-radius: 16px;
+  object-position: center 18%;
+  border-radius: 14px;
   border: 1px solid var(--border);
   background: var(--card);
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  display: block;
 }
 
 .profile-note {
@@ -183,9 +185,9 @@ strong {
 }
 
 .cv-btn:hover, .pill:hover {
-  background: var(--accent);
-  color: white;
-  border-color: var(--accent);
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
   text-decoration: none;
 }
 
@@ -288,10 +290,7 @@ footer {
 © 2026 Sungsoo Kim
 </footer>
 
-<script src="assets/js/date.js"></script>
-
-
-<script>
+<script src="assets/js/date.js"></script><script>
 function toggleMode() {
   document.body.classList.toggle("light");
   localStorage.setItem("mode",

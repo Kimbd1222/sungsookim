@@ -90,18 +90,20 @@ section, main {
 }
 
 .hero {
-  padding-top: 70px;
+  padding-top: 50px;
   text-align: left;
 }
 
 .profile-img {
-  width: 220px;
-  height: 270px;
+  width: 170px;
+  aspect-ratio: 3/4;
   object-fit: cover;
-  border-radius: 16px;
+  object-position: center 18%;
+  border-radius: 14px;
   border: 1px solid var(--border);
   background: var(--card);
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  display: block;
 }
 
 .profile-note {
@@ -183,9 +185,9 @@ strong {
 }
 
 .cv-btn:hover, .pill:hover {
-  background: var(--accent);
-  color: white;
-  border-color: var(--accent);
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
   text-decoration: none;
 }
 
@@ -311,6 +313,7 @@ footer {
   <ul class="news">
     <li><span class="date">May 2026</span> <em>The Diagrammar of Quantum Magnusian</em> appeared on arXiv.</li>
     <li><span class="date">Apr 2026</span> <em>On the integrability of root-Kerr probe dynamics</em> appeared on arXiv.</li>
+    <li><span class="date">Feb 2026</span> Graduated first among the February 2026 graduates in the Department of Physics and Astronomy.</li>
     <li><span class="date">Nov 2025</span> <em>Classical eikonal in relativistic scattering</em> was published in JHEP.</li>
   </ul>
 </section>
@@ -346,10 +349,7 @@ footer {
 © 2026 Sungsoo Kim
 </footer>
 
-<script src="assets/js/date.js"></script>
-
-
-<script>
+<script src="assets/js/date.js"></script><script>
 function toggleMode() {
   document.body.classList.toggle("light");
   localStorage.setItem("mode",
