@@ -12,9 +12,9 @@ github_link: https://github.com/Kimbd1222
 inspirehep: https://inspirehep.net/authors/2875140
 cv_link: assets/files/CV.pdf
 
-avatar: ./assets/img/avatar.png
-favicon: ./assets/img/avatar.png
-favicon_dark: ./assets/img/avatar.png
+avatar: ./assets/img/profile.png
+#favicon: ./assets/img/avatar.png
+#favicon_dark: ./assets/img/avatar.png
 
 enable_footnote: true
 auto_dark_mode: true
