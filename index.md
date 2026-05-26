@@ -1,23 +1,37 @@
----
-layout: homepage
----
+# About Me
 
-## About Me
+I am currently working with the KIAS Amplitudes Team.
 
-I am a Ph.D. student at ...
+My research interests include scattering amplitudes, particle physics, classical eikonal physics, Magnus expansion, and mathematical physics.
 
-## Research Interests
+I am interested in understanding diagrammatic structures underlying scattering processes and their connection to quantum field theory.
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+# News
 
-## News
+- May 2026: The Diagrammar of Quantum Magnusian appeared on arXiv.
+- Apr 2026: On the integrability of root-Kerr probe dynamics appeared on arXiv.
+- Nov 2025: Classical eikonal in relativistic scattering was published in JHEP.
+- Jan 2025: Classical Eikonal from Magnus Expansion was published in JHEP.
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+{% include publications.md %}
 
-{% include_relative _includes/publications.md %}
+# Research Projects
 
-{% include_relative _includes/services.md %}
+## Quantum Magnusian
+
+Developed a generalized diagrammatic framework for Quantum Magnusian structures and implemented the public Mathematica package Quantum-Magnusian.
+
+## Root-Kerr Probe Dynamics
+
+Studied integrability properties of probe dynamics in root-Kerr systems.
+
+## Classical Eikonal Physics
+
+Studied the relation between the Magnus expansion, WQFT, and classical scattering observables.
+
+# Contact
+
+- [Google Scholar]({{ site.google_scholar }})
+- [INSPIRE-HEP]({{ site.inspirehep }})
+- [GitHub]({{ site.github_link }})
+- Email: sooo4017@snu.ac.kr
