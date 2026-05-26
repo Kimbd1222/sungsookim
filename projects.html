@@ -1,1 +1,308 @@
-<h1>Projects</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects | Sungsoo Kim</title>
+<style>
+:root {
+  --bg: #0b0b0b;
+  --text: #93c5fd;
+  --accent: #1d4ed8;
+  --sub: #94a3b8;
+  --border: #1f2937;
+  --card: #111827;
+}
+
+body.light {
+  --bg: #ffffff;
+  --text: #0b1f3a;
+  --accent: #1e3a8a;
+  --sub: #334155;
+  --border: #e5e7eb;
+  --card: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Charter, Georgia, serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  max-width: 900px;
+  margin: auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: var(--sub);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links a:hover,
+.links a.active {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+section, main {
+  max-width: 900px;
+  margin: auto;
+  padding: 56px 20px;
+}
+
+.hero {
+  padding-top: 72px;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 0 0 8px;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+p, li {
+  color: var(--sub);
+  font-size: 15px;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main a:hover, section a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  color: var(--text);
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.toggle {
+  position: fixed;
+  top: 18px;
+  right: 20px;
+  border: 1px solid var(--text);
+  background: var(--bg);
+  color: var(--text);
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 30;
+}
+
+.cv-btn, .pill {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 8px;
+  padding: 8px 18px;
+  border: 1px solid var(--text);
+  border-radius: 20px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.cv-btn:hover, .pill:hover {
+  background: var(--text);
+  color: var(--bg);
+  text-decoration: none;
+}
+
+.news {
+  list-style: none;
+  padding-left: 0;
+}
+
+.news li {
+  margin-bottom: 10px;
+}
+
+.date {
+  display: inline-block;
+  min-width: 82px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.pub {
+  margin-bottom: 24px;
+}
+
+.pub-number {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.note {
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 38px 20px;
+  font-size: 14px;
+  color: var(--sub);
+  border-top: 1px solid var(--border);
+  max-width: 900px;
+  margin: auto;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    display: block;
+  }
+  .links {
+    margin-top: 10px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  section, main {
+    padding: 40px 18px;
+  }
+  .toggle {
+    position: static;
+    margin: 18px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+<button class="toggle" onclick="toggleMode()">Light / Dark</button>
+
+<header class="topbar">
+  <div class="nav">
+    <a class="brand" href="index.html">Sungsoo Kim</a>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <h1>Projects</h1>
+
+  <div class="card">
+    <h3>The Diagrammar of Quantum Magnusian</h3>
+    <ul>
+      <li>Developed a generalized diagrammatic framework for Quantum Magnusian structures.</li>
+      <li>Studied rooted and non-rooted graph structures and their combinatorial weights.</li>
+      <li>Implemented the public Mathematica package <em>Quantum-Magnusian</em>.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>On the integrability of root-Kerr probe dynamics</h3>
+    <ul>
+      <li>Investigated integrability properties of probe dynamics in root-Kerr systems.</li>
+      <li>Studied spin-order structures and obstructions to conserved quantities.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Classical Eikonal Physics</h3>
+    <ul>
+      <li>Studied the relation between the Magnus expansion and WQFT.</li>
+      <li>Explored diagrammatic weights, non-rooted trees, and causal structures in relativistic scattering.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>CERN Summer Student Programme 2023</h3>
+    <ul>
+      <li>Worked on feasibility studies for detecting D<sub>s</sub><sup>+</sup> → τ<sup>+</sup> + ν<sub>τ</sub> in pNe collisions at LHCb.</li>
+      <li>Selected as one of two representatives from Korea for the fully funded CERN Summer Student Programme.</li>
+    </ul>
+  </div>
+</main>
+
+
+<footer>
+© 2026 Sungsoo Kim
+</footer>
+
+<script>
+function toggleMode() {
+  document.body.classList.toggle("light");
+  localStorage.setItem("mode",
+    document.body.classList.contains("light") ? "light" : "dark");
+}
+if (localStorage.getItem("mode") === "light") {
+  document.body.classList.add("light");
+}
+</script>
+</body>
+</html>
