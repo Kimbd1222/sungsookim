@@ -4,6 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>🌊 Publications | Sungsoo Kim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg: #0b0b0b;
@@ -25,7 +28,7 @@ body.light {
 
 * {
   box-sizing: border-box;
-  font-family: Charter, Georgia, serif;
+  font-family: "Source Serif 4", Georgia, serif;
 }
 
 body {
@@ -85,24 +88,18 @@ section, main {
 }
 
 .hero {
-  padding-top: 72px;
-  display: grid;
-  grid-template-columns: 1fr 180px;
-  gap: 34px;
-  align-items: center;
-}
-
-.profile-wrap {
-  text-align: right;
+  padding-top: 70px;
+  text-align: center;
 }
 
 .profile-img {
-  width: 170px;
-  height: 210px;
+  width: 220px;
+  height: 270px;
   object-fit: cover;
   border-radius: 16px;
   border: 1px solid var(--border);
   background: var(--card);
+  margin-bottom: 20px;
 }
 
 .profile-note {
@@ -241,17 +238,6 @@ footer {
   .links {
     margin-top: 10px;
   }
-  .hero {
-    display: block;
-  }
-  .profile-wrap {
-    text-align: left;
-    margin-top: 28px;
-  }
-  .profile-img {
-    width: 145px;
-    height: 180px;
-  }
   h1 {
     font-size: 34px;
   }
@@ -265,6 +251,10 @@ footer {
   .grid {
     grid-template-columns: 1fr;
   }
+  .profile-img {
+    width: 170px;
+    height: 210px;
+  }
 }
 </style>
 </head>
@@ -273,7 +263,7 @@ footer {
 
 <header class="topbar">
   <div class="nav">
-    <a class="brand" href="index.html">🌊 Sungsoo Kim</a>
+    <a class="brand" href="index.html">Sungsoo Kim</a>
     <div class="links">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>

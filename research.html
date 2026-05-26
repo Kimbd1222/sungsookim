@@ -4,6 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>🌊 Research | Sungsoo Kim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg: #0b0b0b;
@@ -25,7 +28,7 @@ body.light {
 
 * {
   box-sizing: border-box;
-  font-family: Charter, Georgia, serif;
+  font-family: "Source Serif 4", Georgia, serif;
 }
 
 body {
@@ -85,24 +88,18 @@ section, main {
 }
 
 .hero {
-  padding-top: 72px;
-  display: grid;
-  grid-template-columns: 1fr 180px;
-  gap: 34px;
-  align-items: center;
-}
-
-.profile-wrap {
-  text-align: right;
+  padding-top: 70px;
+  text-align: center;
 }
 
 .profile-img {
-  width: 170px;
-  height: 210px;
+  width: 220px;
+  height: 270px;
   object-fit: cover;
   border-radius: 16px;
   border: 1px solid var(--border);
   background: var(--card);
+  margin-bottom: 20px;
 }
 
 .profile-note {
@@ -241,17 +238,6 @@ footer {
   .links {
     margin-top: 10px;
   }
-  .hero {
-    display: block;
-  }
-  .profile-wrap {
-    text-align: left;
-    margin-top: 28px;
-  }
-  .profile-img {
-    width: 145px;
-    height: 180px;
-  }
   h1 {
     font-size: 34px;
   }
@@ -265,6 +251,10 @@ footer {
   .grid {
     grid-template-columns: 1fr;
   }
+  .profile-img {
+    width: 170px;
+    height: 210px;
+  }
 }
 </style>
 </head>
@@ -273,7 +263,7 @@ footer {
 
 <header class="topbar">
   <div class="nav">
-    <a class="brand" href="index.html">🌊 Sungsoo Kim</a>
+    <a class="brand" href="index.html">Sungsoo Kim</a>
     <div class="links">
       <a href="index.html">Home</a>
       <a href="research.html" class="active">Research</a>
@@ -292,20 +282,10 @@ footer {
   <section>
     <h2>Research Perspective</h2>
     <p>
-      My research is centered on scattering amplitudes, particle physics, and the
-      mathematical structures that organize perturbative dynamics. I am especially interested
-      in how diagrammatic, algebraic, and worldline-based viewpoints reveal hidden structure
-      in classical and quantum scattering.
-    </p>
-  </section>
-
-  <section>
-    <h2>Magnusian Framework</h2>
-    <p>
-      In my recent work, I study the <strong>Magnusian</strong> structure underlying scattering
-      problems. In earlier classical and relativistic settings, this structure was naturally
-      encountered through the eikonal description. My current aim is to clarify the mathematical
-      foundation behind these structures and organize them in a more general diagrammatic language.
+      My research interests lie broadly in <strong>scattering amplitudes</strong>,
+      <strong>particle physics</strong>, and mathematical structures underlying perturbative dynamics.
+      I am interested in how diagrammatic, algebraic, and worldline-based viewpoints reveal hidden
+      structures in classical and quantum scattering.
     </p>
   </section>
 
@@ -314,19 +294,29 @@ footer {
     <div class="grid">
       <div class="card">
         <h3>Scattering Amplitudes</h3>
-        <p>Diagrammatic and algebraic structures in high-energy scattering.</p>
+        <p>Diagrammatic and algebraic structures in high-energy scattering processes.</p>
       </div>
+
       <div class="card">
         <h3>Magnusian Structures</h3>
-        <p>Graphical and combinatorial foundations of Magnus-type expansions.</p>
+        <p>
+          Studying the mathematical foundations underlying Magnusian structures.
+          My work includes extending generalized Murua-type formulas and developing
+          diagrammatic formulations beyond rooted graph structures.
+        </p>
       </div>
+
       <div class="card">
         <h3>Classical and Relativistic Scattering</h3>
-        <p>Worldline methods, classical limits, and previously eikonal-based formulations.</p>
+        <p>
+          Worldline formulations and classical limits of scattering observables.
+          Earlier studies naturally revealed structures later understood from the Magnusian perspective.
+        </p>
       </div>
+
       <div class="card">
         <h3>Mathematical Physics</h3>
-        <p>Structural questions behind amplitudes, dynamics, and field-theoretic observables.</p>
+        <p>Structural questions behind perturbative expansions and field-theoretic observables.</p>
       </div>
     </div>
   </section>
