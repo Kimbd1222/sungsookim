@@ -191,20 +191,25 @@ strong {
   text-decoration: none;
 }
 
-.news {
-  list-style: none;
-  padding-left: 0;
+.news{
+  list-style:none;
+  padding-left:0;
 }
 
-.news li {
-  margin-bottom: 10px;
+.news li{
+  display:grid;
+  grid-template-columns:150px 1fr;
+  gap:22px;
+
+  align-items:start;
+  margin-bottom:24px;
 }
 
-.date {
-  display: inline-block;
-  min-width: 82px;
-  color: var(--text);
-  font-weight: 600;
+.date{
+  color:var(--text);
+  font-weight:700;
+
+  white-space:nowrap;
 }
 
 .pub {
@@ -311,11 +316,39 @@ footer {
 <section>
   <h2>News</h2>
   <ul class="news">
-    <li><span class="date">May 2026</span> <em>The Diagrammar of Quantum Magnusian</em> appeared on arXiv.</li>
-    <li><span class="date">Apr 2026</span> <em>On the integrability of root-Kerr probe dynamics</em> appeared on arXiv.</li>
-    <li><span class="date">Feb 2026</span> Graduated from Seoul National University, ranking first among February 2026 graduates in the Department of Physics and Astronomy.</li>
-    <li><span class="date">Nov 2025</span> <em>Classical eikonal in relativistic scattering</em> was published in JHEP.</li>
-  </ul>
+
+<li>
+<span class="date">May 2026</span>
+<span>
+<em>The Diagrammar of Quantum Magnusian</em> appeared on arXiv.
+</span>
+</li>
+
+<li>
+<span class="date">Apr 2026</span>
+<span>
+<em>On the integrability of root-Kerr probe dynamics</em>
+appeared on arXiv.
+</span>
+</li>
+
+<li>
+<span class="date">Feb 2026</span>
+<span>
+Graduated from Seoul National University, ranking first among
+February 2026 graduates in the Department of Physics and Astronomy.
+</span>
+</li>
+
+<li>
+<span class="date">Nov 2025</span>
+<span>
+<em>Classical eikonal in relativistic scattering</em>
+was published in JHEP.
+</span>
+</li>
+
+</ul>
 </section>
 
 <section>
