@@ -1,9 +1,13 @@
-Sungsoo Kim static homepage
+Sungsoo Kim static homepage v2
 
 Upload all files to the root of your GitHub repository:
 https://github.com/Kimbd1222/sungsookim
 
-GitHub Pages:
-Settings -> Pages -> Deploy from branch -> main -> /root
+Important:
+- Put your profile photo at assets/img/profile.jpg
+- The CV is assets/files/CV.pdf
+- GitHub Pages: Settings -> Pages -> Deploy from branch -> main -> /root
+- Homepage: https://kimbd1222.github.io/sungsookim/
 
-Replace assets/files/CV.pdf with your latest CV if needed.
+LinkedIn URL used:
+https://www.linkedin.com/in/sung-soo-kim-12126527b

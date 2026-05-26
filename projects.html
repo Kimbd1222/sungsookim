@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Projects | Sungsoo Kim</title>
+<title>🌊 Projects | Sungsoo Kim</title>
 <style>
 :root {
   --bg: #0b0b0b;
@@ -86,6 +86,29 @@ section, main {
 
 .hero {
   padding-top: 72px;
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 34px;
+  align-items: center;
+}
+
+.profile-wrap {
+  text-align: right;
+}
+
+.profile-img {
+  width: 170px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.profile-note {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--sub);
 }
 
 h1 {
@@ -218,6 +241,17 @@ footer {
   .links {
     margin-top: 10px;
   }
+  .hero {
+    display: block;
+  }
+  .profile-wrap {
+    text-align: left;
+    margin-top: 28px;
+  }
+  .profile-img {
+    width: 145px;
+    height: 180px;
+  }
   h1 {
     font-size: 34px;
   }
@@ -239,7 +273,7 @@ footer {
 
 <header class="topbar">
   <div class="nav">
-    <a class="brand" href="index.html">Sungsoo Kim</a>
+    <a class="brand" href="index.html">🌊 Sungsoo Kim</a>
     <div class="links">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
@@ -265,7 +299,7 @@ footer {
   </div>
 
   <div class="card">
-    <h3>On the integrability of root-Kerr probe dynamics</h3>
+    <h3>Root-Kerr Probe Dynamics</h3>
     <ul>
       <li>Investigated integrability properties of probe dynamics in root-Kerr systems.</li>
       <li>Studied spin-order structures and obstructions to conserved quantities.</li>
@@ -273,10 +307,11 @@ footer {
   </div>
 
   <div class="card">
-    <h3>Classical Eikonal Physics</h3>
+    <h3>Magnusian Structures in Classical and Relativistic Scattering</h3>
     <ul>
-      <li>Studied the relation between the Magnus expansion and WQFT.</li>
+      <li>Studied structures that previously appeared through the eikonal description.</li>
       <li>Explored diagrammatic weights, non-rooted trees, and causal structures in relativistic scattering.</li>
+      <li>Worked toward a broader mathematical foundation of Magnusian diagrammatics.</li>
     </ul>
   </div>
 
