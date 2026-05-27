@@ -1,17 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const today = new Date();
 
-  const options = {
-    year: "numeric",
-    month: "long",
-    day: "numeric"
-  };
+const target=document.getElementById("last-updated");
 
-  const formatted = today.toLocaleDateString("en-US", options);
+if(target){
 
-  const target = document.getElementById("last-updated");
+target.innerHTML=
+`Last updated: May 27, 2026<br>© 2026 Sungsoo Kim`;
 
-  if (target) {
-    target.innerHTML = `Last updated: ${formatted}<br>© 2026 Sungsoo Kim`;
-  }
+}
+
 });
